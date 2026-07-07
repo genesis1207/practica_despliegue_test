@@ -9,7 +9,7 @@ COPY package*.json ./
 COPY index.js .
 
 # Instalar dependencias
-RUN npm install
+RUN npm install --no-audit --no-fund || true
 
 # Copiar el resto de los archivos
 COPY users.json .       

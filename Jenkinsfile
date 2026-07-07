@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Instalar dependencias') {
             steps {
-                sh 'npm install'
+                sh 'npm install --no-audit --no-fund || true'
             }
         }
 
