@@ -16,5 +16,17 @@
     },
     "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "directories": {
+        "test": "tests"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/genesis1207/practica_despliegue_test.git"
+    },
+    "bugs": {
+        "url": "https://github.com/genesis1207/practica_despliegue_test/issues"
+    },
+    "homepage": "https://github.com/genesis1207/practica_despliegue_test#readme"
 }
