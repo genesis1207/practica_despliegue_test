@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs "Node25" // Asume que tienes configurada una instalación llamada "Node18" en Jenkins
+        nodejs "Node25"
     }
 
     stages {
@@ -14,6 +14,7 @@ pipeline {
 
         stage('Ejecutar tests') {
             steps {
+                sh 'chmod -R +x node_modules/.bin'
                 sh 'npm test'
             }
         }
